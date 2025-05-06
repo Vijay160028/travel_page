@@ -5,10 +5,22 @@ import SearchTabs from './SearchTabs';
 const Hero = () => {
   const [activeTab, setActiveTab] = useState('cabs');
   const [tripType, setTripType] = useState('oneWay');
+  const [image,setImage] = useState("")
 
+  React.useEffect(()=>{
+    if(activeTab === "cabs"){
+      setImage("https://images.pexels.com/photos/1851481/pexels-photo-1851481.jpeg?auto=compress&cs=tinysrgb&w=1920")
+    }else if(activeTab === "flight"){
+      setImage("https://img.freepik.com/free-photo/airport-terminal_1417-1456.jpg?t=st=1746549682~exp=1746553282~hmac=57a1a63634431e43daa6e7831a9842b2e57426258ecd13ada6d7468ec6cc498d&w=1380")
+    }else if(activeTab === "trains"){
+      setImage("https://img.freepik.com/free-photo/two-elderly-people-train-station_181624-432.jpg?t=st=1746549719~exp=1746553319~hmac=b4864fdafa9343a70ed33071bc72e75b4e01f32acde782d4740ea6304caaff89&w=996")
+    }else{
+      setImage("https://img.freepik.com/free-photo/luxury-bedroom-hotel_1150-10836.jpg?t=st=1746549757~exp=1746553357~hmac=aed416014b151ca109c156a31de602533b0e222a1dab97c6f6a50de2f5b6a06b&w=996")
+    }
+  },[activeTab])
   return (
-    <div className="relative h-[550px] md:h-[600px] bg-cover bg-center bg-fixed" style={{ 
-      backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.pexels.com/photos/1851481/pexels-photo-1851481.jpeg?auto=compress&cs=tinysrgb&w=1920')"
+    <div className="relative h-[550px] pt-[100px] md:h-[750px] bg-cover bg-center bg-fixed" style={{ 
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${image})`
     }}>
       <div className="max-w-7xl mx-auto px-4 py-16 md:py-24 text-center">
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">

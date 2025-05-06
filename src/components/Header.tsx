@@ -3,8 +3,8 @@ import { MapPin } from 'lucide-react';
 
 const Header = () => {
   return (
-    <header className="sticky top-0 bg-white/80 backdrop-blur-sm z-50">
-      <div className="w-[1440px] mx-auto px-[100px] py-8 flex items-center justify-between">
+    <header className="fixed w-[80vw] left-[10vw] rounded-3xl top-4 bg-white/80 backdrop-blur-sm z-50">
+      <div className="w-[80vw] mx-auto px-[100px] py-8 flex items-center justify-between">
         <div className="flex items-center">
           <MapPin className="w-6 h-6 text-purple-600" />
           <span className="ml-2 text-xl font-bold">TripPlane</span>
