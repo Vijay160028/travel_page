@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import cab from './images/cab.jpg';
 import { Car, Plane, Train, Building, ArrowRight } from 'lucide-react';
 import SearchTabs from './SearchTabs';
 
@@ -9,11 +10,12 @@ const Hero = () => {
 
   React.useEffect(()=>{
     if(activeTab === "cabs"){
-      setImage("https://images.pexels.com/photos/1851481/pexels-photo-1851481.jpeg?auto=compress&cs=tinysrgb&w=1920")
+      <img
+      src={cab} />
     }else if(activeTab === "flight"){
       setImage("https://img.freepik.com/free-photo/airport-terminal_1417-1456.jpg?t=st=1746549682~exp=1746553282~hmac=57a1a63634431e43daa6e7831a9842b2e57426258ecd13ada6d7468ec6cc498d&w=1380")
     }else if(activeTab === "trains"){
-      setImage("https://img.freepik.com/free-photo/two-elderly-people-train-station_181624-432.jpg?t=st=1746549719~exp=1746553319~hmac=b4864fdafa9343a70ed33071bc72e75b4e01f32acde782d4740ea6304caaff89&w=996")
+      setImage("https://images.pexels.com/photos/2169286/pexels-photo-2169286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2ric-train-2169286/-Njq3Nz6-5rQ")
     }else{
       setImage("https://img.freepik.com/free-photo/luxury-bedroom-hotel_1150-10836.jpg?t=st=1746549757~exp=1746553357~hmac=aed416014b151ca109c156a31de602533b0e222a1dab97c6f6a50de2f5b6a06b&w=996")
     }

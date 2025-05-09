@@ -7,7 +7,7 @@ export default {
         inter: ['Inter', 'sans-serif'],
       },
       colors: {
-        purple: {
+        purples: {
           50: '#f5f3ff',
           100: '#ede9fe',
           200: '#ddd6fe',
@@ -19,6 +19,13 @@ export default {
           800: '#5b21b6',
           900: '#4c1d95',
         },
+        // tailwind.config.js
+        purple:
+
+        '#8E41D5'
+        ,
+ 
+
         orange: {
           50: '#fff7ed',
           100: '#ffedd5',
