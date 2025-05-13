@@ -8,7 +8,7 @@ import pic3 from "./images/pic3.png"
 const PlanningProcess = () => {
   return (
 <div className="planning-process-section py-16 bg-white mb-[120px]">
-      <div className="max-w-5xl mx-auto px-4">
+      <div className="mx-auto px-4">
         {/* Header Section */}
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold mb-2">How Do I Plan My Trip?</h2>
@@ -22,16 +22,10 @@ const PlanningProcess = () => {
             </svg>
           </button>
         </div>
-        <div className='flex h-[100vh]'>
-          <div className='flex flex-col h-[100%] justify-between pr-10'>
+        <div className='flex min-h-[100vh] justify-center md:flex-row flex-col'>
+          <div className='flex md:flex-col h-[100%] justify-between pr-10'>
           <div className="relative">
             <div className="bg-blue-400 rounded-2xl h-[360px] w-[505px]  overflow-hidden relative" style={{background:`url(${pic1})`}}>
-              {/* <img
-                src={pic1} // Replace with your image path
-                alt="Person looking at view"
-                className="w-full h-48 object-cover"
-              /> */}
-
 
             </div>
           </div>
@@ -75,8 +69,8 @@ const PlanningProcess = () => {
             </div>
           </div>
           </div>
-            <img src={bar} alt="" />
-          <div className='flex flex-col h-[100%] justify-between pl-10'>
+            <img src={bar} alt="" className=' hidden md:inline'/>
+          <div className='flex md:flex-col h-[100%] justify-between pl-10'>
           <div className='pt-10'>
             <h3 className="text-xl font-bold mb-4">Explore Destinations</h3>
             <div className="flex items-start mb-3">
