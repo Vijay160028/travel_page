@@ -33,7 +33,3 @@ const RealTravelers = () => {
 };
 
 export default RealTravelers;
-
-
-   
-

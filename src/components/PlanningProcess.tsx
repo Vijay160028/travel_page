@@ -7,7 +7,7 @@ import pic3 from "./images/pic3.png"
 // py-12 pb-20 bg-white
 const PlanningProcess = () => {
   return (
-<div className="planning-process-section py-16 bg-white mb-[120px]">
+<div className="planning-process-section py-16 bg-white">
       <div className="mx-auto px-4">
         {/* Header Section */}
         <div className="text-center mb-8">
@@ -31,7 +31,7 @@ const PlanningProcess = () => {
           </div>
 
       
-          <div className="relative mt-4"> {/* Added margin-top for spacing */}
+          <div className="relative mt-20"> {/* Added margin-top for spacing */}
             <h3 className="text-xl font-bold mb-4">Create Your Itinerary</h3>
             <div className="flex items-start mb-3">
               <div className="mr-3 mt-1">
@@ -58,20 +58,16 @@ const PlanningProcess = () => {
               <p className="text-gray-600">Customize based on your interests & time</p>
             </div>
           </div>
-          <div className="relative mt-4">
+          <div className="relative mt-20">
             <div className="bg-yellow-400 rounded-2xl h-[360px] w-[505px] overflow-hidden relative"style={{background:`url(${pic3})`}}>
-              {/* <img
-                src={pic3} // Replace with your image path
-                alt="People talking"
-                className="w-full h-48 object-cover"
-              /> */}
+
 
             </div>
           </div>
           </div>
             <img src={bar} alt="" className=' hidden md:inline'/>
           <div className='flex md:flex-col h-[100%] justify-between pl-10'>
-          <div className='pt-10'>
+          <div className='pt-20'>
             <h3 className="text-xl font-bold mb-4">Explore Destinations</h3>
             <div className="flex items-start mb-3">
               <div className="mr-3 mt-1">
@@ -98,18 +94,13 @@ const PlanningProcess = () => {
               <p className="text-gray-600">Filter by vibe: Solo, Scenic, Foodie, Cultural</p>
             </div>
           </div>
-          <div className="relative ">
+          <div className="relative mt-20 ">
             <div className="bg-transparent-400 rounded-xl h-[360px] w-[505px] overflow-hidden relative"style={{background:`url(${pic2})`}}> 
-              {/* <img
-                src={pic2} // Replace with your image path
-                alt="Person using phone"
-                className="w-full h-48 object-cover"
-              /> */}
-
+  
 
             </div>
           </div>
-          <div className='pb-10'>
+          <div className='relative mt-20'>
             <h3 className="text-xl font-bold mb-4">Chat with Local Experts or Past Travelers</h3>
             <div className="flex items-start mb-3">
               <div className="mr-3 mt-1">
