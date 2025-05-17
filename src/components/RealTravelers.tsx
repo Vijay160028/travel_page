@@ -1,35 +1,44 @@
 import React from 'react';
-import { Diamond } from 'lucide-react';
 
-const RealTravelers = () => {
+const TravelerBenefits = () => {
   return (
     <div 
-    className="bg-purple rounded-2xl text-white py-12 md:py-20 " 
-    style={{
-        paddingBottom: '80px',
-        borderLeftWidth: '100px',
-        borderRightWidth: '100px',
-        paddingTop:'80px',
-        borderTopWidth:'80px',
-        borderBottomWidth:'80px'
+      style={{
+        marginTop:'50px',
+        backgroundColor: '#8a00c2', 
+        font:'Urbanist',
+        color: 'white', 
+        padding: '3rem 1rem', 
+        borderRadius: '16px', 
+        position: 'relative',
+        maxWidth: '1200px', 
+        margin: '0 auto'
       }}
     >
-      <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
-        <div className="space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold">
-            Only Real Travelers can guide you...
-          </h2>
-          <p className="text-lg md:text-xl opacity-90">
-            Only people who've actually been there can help you plan better, smarter, and 
-            stress-free.
-          </p>
-        </div>
-        <div className="flex justify-end">
-          <Diamond className="w-16 h-16 text-white/30" />
-        </div>
+      <div style={{ textAlign: 'left', lineHeight: '1.5'}}>
+        <h2 style={{ fontSize: '2rem', fontWeight: 'bold',marginLeft:'2rem'}}>
+          Only Real<br />Travelers can<br />guide you...
+        </h2>
+        <p style={{ fontSize: '1.125rem', marginTop: '1rem',marginLeft:'2rem' }}>
+          Only people who’ve actually been there<br />
+          can help you plan better, smarter, and<br />
+          stress-free.
+        </p>
+      </div>
+
+      <div 
+        style={{
+          position: 'absolute', 
+          top: '20px', 
+          right: '30px', 
+          fontSize: '24px', 
+          opacity: '0.7'
+        }}
+      >
+        💎
       </div>
     </div>
   );
 };
 
-export default RealTravelers;
+export default TravelerBenefits;
