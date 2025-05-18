@@ -33,8 +33,8 @@ const PlanningProcess = () => {
           <div className="flex flex-col justify-between gap-12 w-full md:w-1/2">
             {/* Image 1 */}
             <div
-              className="rounded-2xl h-60 sm:h-80 w-full bg-cover bg-center"
-              style={{ backgroundImage: `url(${pic1})` }}
+              className="rounded-2xl h-[405px] w-[505px]  bg-cover bg-center"
+              style={{ backgroundImage: `url(${pic1Url})` }}
             />
 
             {/* Section 1 */}
@@ -68,7 +68,7 @@ const PlanningProcess = () => {
 
             {/* Image 3 */}
             <div
-              className="rounded-2xl h-60 sm:h-80 w-full bg-cover bg-center"
+              className="rounded-2xl h-[400px] w-[505px] bg-cover bg-center"
               style={{ backgroundImage: `url(${pic3Url})` }}
             />
           </div>
@@ -109,7 +109,7 @@ const PlanningProcess = () => {
 
             {/* Image 2 */}
             <div
-              className="rounded-2xl h-60 sm:h-80 w-full bg-cover bg-center"
+              className="rounded-2xl h-[405px] w-[505px]  bg-contain bg-center"
               style={{ backgroundImage: `url(${pic2Url})` }}
             />
 

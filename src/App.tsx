@@ -12,18 +12,20 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="font-inter text-slate-800">
+    <div className="font-inter text-slate-800 overflow-x-hidden">
       <Header />
       <Hero />
-      <RealTravelers />
-      <PlanningProcess />
-      <Testimonials />
-      <div className="max-w-7xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-8">
-        <WhatsappSupport />
-        <HotelShowcase />
+      <div className="px-4 sm:px-6 md:px-8">
+        <RealTravelers />
+        <PlanningProcess />
+        <Testimonials />
+        <div className="max-w-7xl mx-auto py-8 md:py-16 lg:py-24 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+          <WhatsappSupport />
+          <HotelShowcase />
+        </div>
+        <SuccessStories />
+        <BlogSection />
       </div>
-      <SuccessStories />
-      <BlogSection />
       <Footer />
     </div>
   );

@@ -1,11 +1,15 @@
 import React from 'react';
-import { Phone } from 'lucide-react';
 import wa from "./images/wa.png"
 
 const WhatsappSupport = () => {
   return (
-    <div className="bg-transparent text-white rounded-2xl p-8 h-full flex flex-col justify-center items-center" style={{ width: '505px', height: '672px', borderRadius: '20px' }}>
-      <img src={wa} alt="WhatsApp Support" className="w-full h-full object-cover rounded-2xl" />
+    <div className="bg-transparent text-white rounded-xl md:rounded-2xl p-4 md:p-6 w-full h-full max-h-[500px] md:max-h-[672px]">
+      <img 
+        src={wa} 
+        alt="WhatsApp Support" 
+        className="w-full h-full object-cover rounded-xl md:rounded-2xl"
+        loading="lazy"
+      />
     </div>
   );
 };
